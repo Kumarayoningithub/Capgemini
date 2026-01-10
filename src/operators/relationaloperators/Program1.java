@@ -1,0 +1,28 @@
+package operators.relationaloperators;
+
+public class Program1 {
+
+	public static void main(String[] args) {
+
+		
+		System.out.println(10<20);
+		
+		boolean res = 10>20;
+		
+		System.out.println(res);
+	
+	
+	res= 'A'< 'B';
+	
+	System.out.println(res);
+	
+	
+	res = "A" == "B";
+	
+	System.out.println(res);
+	
+	
+			
+
+}
+}
