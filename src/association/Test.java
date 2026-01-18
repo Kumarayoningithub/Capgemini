@@ -1,0 +1,17 @@
+package association;
+
+public class Test {
+	
+	// Mobile has battery, car has tyre
+	
+	public static void main(String[] args) {
+		
+		Car c=new Car();
+		c.setBrand("A");
+		c.setPrice(20000000);
+		
+		Engine e=c.getEngine();
+		System.out.println(e);
+	}
+
+}
