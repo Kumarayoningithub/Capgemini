@@ -39,44 +39,44 @@
 //    }
 //}
 import java.sql.*;
-import java.util.Scanner;  // Import Scanner for user input
+import java.util.Scanner;  
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);  // Create Scanner to read keyboard input
+        Scanner scanner = new Scanner(System.in);  
 
-        try (Connection conn = DatabaseConfig.getConnection()) {  // Auto-closes connection
+        try (Connection conn = DatabaseConfig.getConnection()) { 
 
-            while (true) {  // Infinite loop - keeps running until we break
+            while (true) { 
                 System.out.println("\n=== ADD NEW TASK ===");
                 System.out.print("Enter title (or 'quit' to exit): ");
-                String title = scanner.nextLine();  // Wait for user to type and press Enter
+                String title = scanner.nextLine();  
 
-                // Check if user wants to quit
-                if (title.equalsIgnoreCase("quit")) {  // equalsIgnoreCase = "quit", "QUIT", "Quit" all work
+              
+                if (title.equalsIgnoreCase("quit")) { 
                     System.out.println("Exiting...");
-                    break;  // Exit the while loop
+                    break;  
                 }
 
                 System.out.print("Enter description: ");
-                String description = scanner.nextLine();  // Get description from user
+                String description = scanner.nextLine();  
 
-                // Insert into database
+            
                 String sql = "INSERT INTO tasks (title, description) VALUES (?, ?)";
-                try (PreparedStatement pstmt = conn.prepareStatement(sql)) {  // Auto-closes statement
-                    pstmt.setString(1, title);        // Set first ? with title
-                    pstmt.setString(2, description);   // Set second ? with description
+                try (PreparedStatement pstmt = conn.prepareStatement(sql)) {  
+                    pstmt.setString(1, title);       
+                    pstmt.setString(2, description);   
 
-                    int rowsAffected = pstmt.executeUpdate();  // Run the insert
+                    int rowsAffected = pstmt.executeUpdate();  
                     System.out.println("✅ Task added! (" + rowsAffected + " row(s) affected)");
-                }  // pstmt automatically closed here
-            }  // Loop back to start - ask for another task
+                } 
+            } 
 
-        } catch (SQLException | ClassNotFoundException e) {  // Handle any database errors
+        } catch (SQLException | ClassNotFoundException e) {  
             System.err.println("Database error: " + e.getMessage());
             e.printStackTrace();
         }
 
-        scanner.close();  // Close the scanner when done
+        scanner.close();  
     }
 }
