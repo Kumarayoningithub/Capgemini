@@ -1,0 +1,242 @@
+create database practice;
+use practice;
+drop database practice;
+
+CREATE DATABASE SCOTT;
+USE SCOTT;
+DROP TABLE IF EXISTS emp;
+
+CREATE TABLE emp(
+empno decimal(4,0) NOT NULL,
+ename varchar(10) default NULL,
+job varchar(9) default NULL,
+mgr decimal(4,0) default NULL,
+hiredate date default NULL,
+sal decimal(7,2) default NULL,
+comm decimal(7,2) default NULL,
+deptno decimal(2,0) default NULL
+);
+
+CREATE TABLE dept (
+deptno decimal(2,0) default NULL,
+dname varchar(14) default NULL,
+loc varchar(13) default NULL
+);
+
+INSERT INTO emp VALUES
+('7369','SMITH','CLERK','7902','1980-12-17','800.00',NULL,'20');
+INSERT INTO emp VALUES
+('7499','ALLEN','SALESMAN','7698','1981-02-20','1600.00','300.00','30');
+INSERT INTO emp VALUES
+('7521','WARD','SALESMAN','7698','1981-02-22','1250.00','500.00','30');
+INSERT INTO emp VALUES ('7566','JONES','MANAGER','7839','1981-04-02','2975.00',NULL,'20');
+INSERT INTO emp VALUES
+('7654','MARTIN','SALESMAN','7698','1981-09-28','1250.00','1400.00','30');
+INSERT INTO emp VALUES
+('7698','BLAKE','MANAGER','7839','1981-05-01','2850.00',NULL,'30');
+INSERT INTO emp VALUES
+('7782','CLARK','MANAGER','7839','1981-06-09','2450.00',NULL,'10');
+INSERT INTO emp VALUES
+('7788','SCOTT','ANALYST','7566','1982-12-09','3000.00',NULL,'20');
+INSERT INTO emp VALUES
+('7839','KING','PRESIDENT',NULL,'1981-11-17','5000.00',NULL,'10');
+INSERT INTO emp VALUES
+('7844','TURNER','SALESMAN','7698','1981-09-08','1500.00','0.00','30');
+INSERT INTO emp VALUES
+('7876','ADAMS','CLERK','7788','1983-01-12','1100.00',NULL,'20');
+INSERT INTO emp VALUES
+('7900','JAMES','CLERK','7698','1981-12-03','950.00',NULL,'30');
+INSERT INTO emp VALUES
+('7902','FORD','ANALYST','7566','1981-12-03','3000.00',NULL,'20');
+INSERT INTO emp VALUES
+('7934','MILLER','CLERK','7782','1982-01-23','1300.00',NULL,'10');
+INSERT INTO dept VALUES ('10','ACCOUNTING','NEW YORK');
+INSERT INTO dept VALUES ('20','RESEARCH','DALLAS');
+INSERT INTO dept VALUES ('30','SALES','CHICAGO');
+INSERT INTO dept VALUES ('40','OPERATIONS','BOSTON');
+
+select * from emp;
+select * , sal*12 as annual_salary from emp;
+
+--  write a  query to display details of an employee who are earning salary more than 2k
+
+select * from emp where sal>2000;
+-- waq to display details of adams 
+
+select * from emp where ename="adams";
+
+-- waqt to display name and joining date of an employees, if the employee are hired after 31st december 1981
+
+
+--  yyyy-mm-dd 
+
+select ename, hiredate from emp where hiredate> '1981-12-31';
+
+-- waq to display details of an employee who are working as a manager in dept no 13
+
+
+select * from emp where job= "Manager" and deptno=30;
+
+-- waq to display details of an employees who are working as a salesman in dept no 30 and earning salary greater than 1000
+
+select * from emp where job= "salesman" and deptno=30 and sal>1000;
+
+-- waq to display name and job of an employee who are working as a clerk or analyst
+select ename, job from emp where job = "clerk" or job = "analyst";
+
+-- waq to display details of an employees who are working as a clerk or earning salary more than 2k
+
+select * from emp where job = "clerk" or sal>=2000; 
+
+-- waq to display name and dept no of an employess except who are working in dept no 20
+
+SELECT ename, deptno
+FROM emp
+WHERE deptno != 20;
+
+select * from emp where not deptno=20;
+
+-- waqt display details of an employees who are working as a manager in dept no 10 or 20
+
+select * from emp where job="manager" and (deptno=10 or deptno=20);
+
+-- waqt display details of an employees working as a analyst or a clerk in dept no 10 or 20
+
+select * from emp where (job = "analyst" or job= "clerk") and (deptno=10 or deptno= 20);
+
+
+--  waqt display job of a employees except who are working as analyst or manager
+
+SELECT job
+FROM emp
+WHERE job NOT IN ('ANALYST', 'MANAGER');
+
+SELECT job
+FROM emp
+WHERE NOT (job = 'MANAGER' OR job = 'CLERK');
+
+
+-- in operator 
+
+
+SELECT hiredate
+FROM emp
+WHERE hiredate BETWEEN '1981-01-01' AND '1981-12-31';
+
+-- waqtd details of employees working in dept 10 or 30
+
+select * from emp where deptno= 10 or deptno = 30;
+
+-- waqt display names of employees hired during 1982
+
+SELECT ename
+FROM emp
+WHERE hiredate BETWEEN '1982-01-01' AND '1982-12-31';
+
+-- waqt display name and salary given to the employee earning commision
+
+select ename, sal from emp where comm is not null; 
+
+-- waqt display details of an employee working as clerk int dept 10 or 30 having character 'A' in their name
+
+
+SELECT *
+FROM emp
+WHERE job = 'CLERK'
+  AND deptno IN (10, 30)
+  AND ename LIKE '%A%';
+  
+ -- display name last character will be 's'
+ 
+ select ename from emp where ename like "%S";
+ 
+ -- 
+SELECT MAX(sal)
+FROM emp
+WHERE deptno IN (10, 20)
+  AND job IN ('CLERK', 'ANALYST');
+  
+  --
+  SELECT 
+    COUNT(*) AS total_employees,
+    SUM(sal) AS total_salary
+FROM emp
+WHERE job = 'SALESMAN'
+  AND comm IS NOT NULL
+  AND comm > 0;
+  
+  --
+  SELECT 
+    job,
+    MAX(sal) AS max_salary,
+    MIN(sal) AS min_salary
+FROM emp
+WHERE ename LIKE '%A%'
+GROUP BY job;
+
+
+SELECT deptno, AVG(sal)
+FROM emp
+GROUP BY deptno;
+
+select * from emp left outer join dept on emp.deptno = dept.deptno
+union
+select * from emp right outer join dept on emp.deptno = dept.deptno;
+
+-- self join 
+
+SELECT 
+    e1.ename,
+    e1.sal,
+    e2.ename AS mgr_name,
+    e2.job AS mgr_job
+FROM emp e1
+JOIN emp e2
+ON e1.mgr = e2.empno
+WHERE e1.sal > 2000;
+
+--
+
+SELECT 
+    e.empno,
+    e.comm,
+    m.hiredate AS manager_hiredate
+FROM emp e
+JOIN emp m
+ON e.mgr = m.empno
+WHERE m.hiredate < '1982-01-01';
+
+create index uem2 on emp(sal);
+
+-- JDBC working start--
+
+create database task;
+
+use task;
+
+create table task (
+id int auto_increment primary key,
+title varchar(255),
+description text
+);
+
+use SCOTT;
+
+-- start jpa hibernate--
+create database jpa_demo;
+use jpa_demo;
+
+
+
+
+
+
+
+
+
+                     
+
+
+
+
+
