@@ -4,9 +4,7 @@ import jakarta.persistence.*;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Data Access Object for User entity
- */
+
 public class UserDAO {
 
     private EntityManagerFactory emf;
@@ -17,9 +15,7 @@ public class UserDAO {
         this.em = emf.createEntityManager();
     }
 
-    /**
-     * Create a new user
-     */
+    
     public UserDTO create(User user) {
         try {
             em.getTransaction().begin();
@@ -37,9 +33,7 @@ public class UserDAO {
         }
     }
 
-    /**
-     * Find user by ID
-     */
+   
     public UserDTO findById(Long id) {
         try {
             User user = em.find(User.class, id);
@@ -51,9 +45,7 @@ public class UserDAO {
         }
     }
 
-    /**
-     * Find user by email (unique constraint recommended)
-     */
+  
     public UserDTO findByEmail(String email) {
         try {
             TypedQuery<User> query = em.createQuery(
@@ -71,9 +63,6 @@ public class UserDAO {
         }
     }
 
-    /**
-     * Find all users
-     */
     public List<UserDTO> findAll() {
         try {
             TypedQuery<User> query = em.createQuery("SELECT u FROM User u", User.class);
@@ -89,9 +78,7 @@ public class UserDAO {
         }
     }
 
-    /**
-     * Update user
-     */
+   
     public UserDTO update(UserDTO userDTO) {
         try {
             em.getTransaction().begin();
@@ -122,9 +109,7 @@ public class UserDAO {
         }
     }
 
-    /**
-     * Delete user
-     */
+    
     public boolean delete(Long id) {
         try {
             em.getTransaction().begin();
@@ -151,9 +136,7 @@ public class UserDAO {
         }
     }
 
-    /**
-     * Get all tasks for a user
-     */
+  
     public List<TaskDTO> getUserTasks(Long userId) {
         try {
             User user = em.find(User.class, userId);
@@ -174,9 +157,7 @@ public class UserDAO {
         }
     }
 
-    /**
-     * Convert User to UserDTO
-     */
+   
     private UserDTO convertToDTO(User user) {
         return new UserDTO(
                 user.getId(),
@@ -185,9 +166,6 @@ public class UserDAO {
         );
     }
 
-    /**
-     * Convert UserDTO to User
-     */
     private User convertToEntity(UserDTO userDTO) {
         User user = new User();
         user.setId(userDTO.getId());
@@ -196,9 +174,7 @@ public class UserDAO {
         return user;
     }
 
-    /**
-     * Close resources
-     */
+  
     public void close() {
         if (em != null && em.isOpen()) {
             em.close();

@@ -319,3 +319,22 @@ This repository documents the **day-wise syllabus and activities** covered durin
 ---
 
 ### 📅 02.03.2026 — Day 43
+- many comment lines addeded on what to do next
+- Task, TaskDAO, TaskDTO, User, UserDAO, UserDTO
+- Updated pom.xml, main.java and created persistence.xml
+- many to many transactions
+
+---
+
+### 📅 05.03.2026 - Day 44
+- hibernate framework
+- JDBC basics
+- Entity and table mapping and relationship mapping
+- Customer & Customer Details
+
+---
+
+### 📅 06.03.2026 -- Day 45
+- Started DevOps
+- Waterfall Model, Agile Model, DevOps
+

@@ -7,47 +7,38 @@ import jakarta.persistence.TypedQuery;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Data Access Object for Task entity
- * Handles all database operations for Task objects
- */
+
 public class TaskDAO {
 
     private EntityManagerFactory emf;
     private EntityManager em;
 
-    /**
-     * Constructor - initializes EntityManagerFactory and EntityManager
-     */
+  
     public TaskDAO() {
-        // Use the correct persistence unit name - should match persistence.xml
+       
         this.emf = Persistence.createEntityManagerFactory("taskPU");
         this.em = emf.createEntityManager();
     }
 
-    /**
-     * Create a new task in the database
-     * @param task The Task entity to persist
-     * @return TaskDTO of the created task
-     */
+
     public TaskDTO create(Task task) {
         try {
-            // Begin transaction
+           
             em.getTransaction().begin();
 
-            // Persist the entity
+        
             em.persist(task);
 
-            // Commit transaction
+           
             em.getTransaction().commit();
 
             System.out.println("Task created successfully with ID: " + task.getId());
 
-            // Convert to DTO and return
+            
             return convertToDTO(task);
 
         } catch (Exception e) {
-            // Rollback if transaction is active and exception occurred
+
             if (em.getTransaction().isActive()) {
                 em.getTransaction().rollback();
             }
@@ -57,11 +48,7 @@ public class TaskDAO {
         }
     }
 
-    /**
-     * Find a task by its ID
-     * @param id The task ID to search for
-     * @return TaskDTO if found, null otherwise
-     */
+   
     public TaskDTO findById(Long id) {
         try {
             Task task = em.find(Task.class, id);
@@ -73,17 +60,14 @@ public class TaskDAO {
         }
     }
 
-    /**
-     * Find all tasks in the database
-     * @return List of TaskDTO objects
-     */
+  
     public List<TaskDTO> findAll() {
         try {
-            // Create JPQL query to get all tasks
+            
             TypedQuery<Task> query = em.createQuery("SELECT t FROM Task t", Task.class);
             List<Task> tasks = query.getResultList();
 
-            // Convert each Task to TaskDTO
+          
             return tasks.stream()
                     .map(this::convertToDTO)
                     .collect(Collectors.toList());
@@ -91,28 +75,24 @@ public class TaskDAO {
         } catch (Exception e) {
             System.err.println("Error finding all tasks: " + e.getMessage());
             e.printStackTrace();
-            return List.of(); // Return empty list on error
+            return List.of();
         }
     }
 
-    /**
-     * Update an existing task
-     * @param taskDTO The task data to update
-     * @return Updated TaskDTO
-     */
+  
     public TaskDTO update(TaskDTO taskDTO) {
         try {
             em.getTransaction().begin();
 
-            // Find the existing task
+          
             Task existingTask = em.find(Task.class, taskDTO.getId());
 
             if (existingTask != null) {
-                // Update fields - using the corrected setter methods
+               
                 existingTask.setTask(taskDTO.getTask());
                 existingTask.setDescription(taskDTO.getDescription());
 
-                // Merge the changes (merge is optional here as the entity is managed)
+           
                 Task updatedTask = em.merge(existingTask);
 
                 em.getTransaction().commit();
@@ -135,11 +115,7 @@ public class TaskDAO {
         }
     }
 
-    /**
-     * Delete a task by ID
-     * @param id The ID of the task to delete
-     * @return true if deleted successfully, false otherwise
-     */
+  
     public boolean delete(Long id) {
         try {
             em.getTransaction().begin();
@@ -167,11 +143,7 @@ public class TaskDAO {
         }
     }
 
-    /**
-     * Convert Task entity to TaskDTO
-     * @param task The Task entity to convert
-     * @return TaskDTO object
-     */
+   
     private TaskDTO convertToDTO(Task task) {
         return new TaskDTO(
                 task.getId(),
@@ -180,11 +152,7 @@ public class TaskDAO {
         );
     }
 
-    /**
-     * Convert TaskDTO to Task entity
-     * @param taskDTO The TaskDTO to convert
-     * @return Task entity
-     */
+  
     private Task convertToEntity(TaskDTO taskDTO) {
         Task task = new Task();
         task.setId(taskDTO.getId());
@@ -193,9 +161,7 @@ public class TaskDAO {
         return task;
     }
 
-    /**
-     * Close resources - should be called when done with DAO
-     */
+    
     public void close() {
         if (em != null && em.isOpen()) {
             em.close();

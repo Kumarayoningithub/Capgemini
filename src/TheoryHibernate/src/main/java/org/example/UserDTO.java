@@ -1,32 +1,30 @@
 package org.example;
 
-/**
- * Data Transfer Object for User entity
- */
+
 public class UserDTO {
 
     private Long id;
     private String name;
     private String email;
 
-    // Default constructor
+  
     public UserDTO() {
     }
 
-    // Constructor with all fields
+  
     public UserDTO(Long id, String name, String email) {
         this.id = id;
         this.name = name;
         this.email = email;
     }
 
-    // Constructor without ID (for new users)
+   
     public UserDTO(String name, String email) {
         this.name = name;
         this.email = email;
     }
 
-    // Getters and Setters
+  
     public Long getId() {
         return id;
     }
