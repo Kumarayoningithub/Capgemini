@@ -331,6 +331,7 @@ This repository documents the **day-wise syllabus and activities** covered durin
 - JDBC basics
 - Entity and table mapping and relationship mapping
 - Customer & Customer Details
+- Done the proj01 for jpa Hibernate practice
 
 ---
 
