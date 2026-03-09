@@ -1,3 +1,57 @@
+# Capgemini Training Repository
+
+This repository contains my learning projects, practice exercises, and weekly assessments completed during training.
+
+## Repository Structure
+
+```
+Capgemini
+├── PracticeForSelf
+│   
+│
+├── Weekly_Assessment_2026-03-07
+│
+└── src
+    ├── Basic_java
+    ├── Advance_Java
+    ├── Jdbc
+    ├── CapgeminiTesting
+    ├── JpaHibernate
+    ├── TheoryHibernate
+    ├── sql
+    ├── git-github
+    └── DevOps
+```
+
+## Contents
+
+### PracticeForSelf
+
+Personal practice exercises.
+
+### Weekly_Assessment_2026-03-07
+
+Weekly assessment submissions.
+
+### src
+
+Training projects organized by topic:
+
+* Basic Java
+* Advanced Java
+* JDBC
+* Capgemini Testing
+* JPA & Hibernate
+* SQL
+* Git & GitHub
+* DevOps
+
+---
+
+## Author
+
+Ayon Kumar Saha
+
 # 📘 Java & DSA Training Progress
 
 This repository documents the **day-wise syllabus and activities** covered during the Java, DSA, SQL, and Testing training program from **January–March 2026**.
