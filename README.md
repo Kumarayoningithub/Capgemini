@@ -331,6 +331,7 @@ This repository documents the **day-wise syllabus and activities** covered durin
 - JDBC basics
 - Entity and table mapping and relationship mapping
 - Customer & Customer Details
+- Done the proj01 for jpa Hibernate practice
 
 ---
 
@@ -349,7 +350,16 @@ This repository documents the **day-wise syllabus and activities** covered durin
 ---
 
 ### 📅  09.03.2026 -- Day 47
+-  Jenkins Tutorial
+-  CI/CD
+-  Made Projects and understood the CI/CD Pipeline
+-  Deployed and Build the Projects in Jenkins
+
+---
+
+### 📅  10.03.2026 -- Day 48
 -
 -
 -
+
 
