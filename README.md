@@ -342,16 +342,21 @@ This repository documents the **day-wise syllabus and activities** covered durin
 
 ## 06.03.2026
 ### Day 45 (Friday)
-•⁠  ⁠Started DevOps (Theory)
-•⁠  ⁠Waterfall Model, Agile Model, DevOps (Theory)
+- ⁠ Started DevOps (Theory)
+-  ⁠Waterfall Model, Agile Model, DevOps (Theory)
 
 ---
 
 ### 📅  07.03.2026 -- Day 46
-•⁠  ⁠GenAI Online Class (Theory Class)
-•⁠  ⁠Version Control System (Theory)
-•⁠  ⁠Git | Github (Theory)
-.  Jenkins installation
+-  ⁠GenAI Online Class(Theory Class)
+-⁠  ⁠Version Control System (Theory)
+-⁠  ⁠Git | Github (Theory)
+-  Jenkins installation
 
 ---
+
+### 📅  09.03.2026 -- Day 47
+-
+-
+-
 
