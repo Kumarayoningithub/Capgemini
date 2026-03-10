@@ -396,10 +396,10 @@ This repository documents the **day-wise syllabus and activities** covered durin
 ---
 
 ### 📅  07.03.2026 -- Day 46
--  ⁠GenAI Online Class(Theory Class)
--⁠  ⁠Version Control System (Theory)
--⁠  ⁠Git | Github (Theory)
--  Jenkins installation
+- GenAI Online Class(Theory Class)
+- Version Control System(Theory)
+- Git-Github(Theory)
+- Jenkins installation
 
 ---
 
@@ -412,8 +412,16 @@ This repository documents the **day-wise syllabus and activities** covered durin
 ---
 
 ### 📅  10.03.2026 -- Day 48
+- Power Skills
+- Email writing
+
+---
+
+### 📅  11.03.2026 -- Day 49
 -
 -
--
+
+---
+
 
 
