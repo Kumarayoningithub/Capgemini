@@ -418,10 +418,15 @@ This repository documents the **day-wise syllabus and activities** covered durin
 ---
 
 ### 📅  11.03.2026 -- Day 49
--
--
+- Spring (Theory)
+- Spring Modules and Spring Architecture
+- Spring Configurations
+- Writing Hands on Code for Practice
 
 ---
+
+### 📅  12.03.2026 -- Day 50
+
 
 
 
