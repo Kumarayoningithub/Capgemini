@@ -339,6 +339,11 @@ This repository documents the **day-wise syllabus and activities** covered durin
 
 ---
 
+## ✅ Session 2 Complete
+
+---
+
+
 ### 📅 24.02.2026 — Day 38
 - JUnit testing
 - Maven
@@ -416,6 +421,11 @@ This repository documents the **day-wise syllabus and activities** covered durin
 - Email writing
 
 ---
+
+## ✅ Session 3 Complete
+
+---
+
 
 ### 📅  11.03.2026 -- Day 49
 - Spring (Theory)
