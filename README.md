@@ -426,6 +426,18 @@ This repository documents the **day-wise syllabus and activities** covered durin
 ---
 
 ### 📅  12.03.2026 -- Day 50
+- SpringBoot Framework Start
+- SpringBoot Architecture
+- Design Pattern
+- Create & configure SpringBoot Project
+- Download & Install PostMan, Apache Tomcat
+
+---
+
+ ### 📅  13.03.2026 -- Day 51
+ -
+ 
+
 
 
 
