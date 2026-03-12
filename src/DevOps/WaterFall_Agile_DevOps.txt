@@ -1,0 +1,31 @@
+Waterfall vs Agile vs DevOps (Simple Explanation)
+
+1. Waterfall
+- Traditional software development method.
+- Work is done step by step.
+- Phases: Requirement → Design → Development → Testing → Deployment.
+- Each phase must be completed before the next phase starts.
+- Changes are difficult after development begins.
+- Testing happens at the end of the project.
+
+2. Agile
+- Flexible and iterative development method.
+- Work is divided into small cycles called sprints (usually 2–4 weeks).
+- Development and testing happen continuously.
+- Changes are allowed even during development.
+- Customer feedback is taken regularly.
+- Helps deliver software faster.
+
+3. DevOps
+- Combination of Development (Dev) and Operations (Ops).
+- Focuses on automation and collaboration.
+- Uses CI/CD (Continuous Integration and Continuous Delivery).
+- Code is automatically built, tested, and deployed.
+- Tools like Jenkins, Docker, and Git are commonly used.
+- Helps deliver software quickly and reliably.
+
+Simple Difference
+
+Waterfall  : Step-by-step development process with fixed stages.
+Agile      : Flexible development with small iterations and frequent updates.
+DevOps     : Automation and collaboration to deliver software faster.
