@@ -448,7 +448,21 @@ This repository documents the **day-wise syllabus and activities** covered durin
 ---
 
  ### 📅  13.03.2026 -- Day 51
- -
+ - Spring MVC Architecture
+ - Get & Post Method
+ - Servlet Life Cycle
+ - Servlet Project Configuration
+ - Spring Boot Project Configuration
+ - Login page using Servlet
+
+---
+
+ ### 📅  14.03.2026 -- Day 51
+ - M1 Re-Assessment
+ - Practice Session for Spring Boot
+ - Weekly Assessment
+
+
  
 
 
