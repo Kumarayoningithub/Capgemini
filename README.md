@@ -460,9 +460,9 @@ This repository documents the **day-wise syllabus and activities** covered durin
 
  ### 📅  14.03.2026 -- Day 52
  - M1 Re-Assessment
- - Practice Session for Spring Boot
+ - Revisit Spring Framework Architecture
  - Weekly Assessment
- - SpringBoot MVC practice project(redirection of paths)
+ - Spring MVC Project(Path redirection)
 
 ---
 
