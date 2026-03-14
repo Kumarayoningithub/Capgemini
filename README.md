@@ -10,6 +10,7 @@ Capgemini
 │   
 │
 ├── Weekly_Assessment_2026-03-07
+├── Weekly_Assessment_2026-03-14
 │
 └── src
     ├── Basic_java
@@ -457,10 +458,17 @@ This repository documents the **day-wise syllabus and activities** covered durin
 
 ---
 
- ### 📅  14.03.2026 -- Day 51
+ ### 📅  14.03.2026 -- Day 52
  - M1 Re-Assessment
  - Practice Session for Spring Boot
  - Weekly Assessment
+ - SpringBoot MVC practice project(redirection of paths)
+
+---
+
+### 📅  15.03.2026 -- Day 52
+
+
 
 
  
