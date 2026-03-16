@@ -467,9 +467,16 @@ This repository documents the **day-wise syllabus and activities** covered durin
 
 ---
 
-### 📅  15.03.2026 -- Day 52
+### 📅  16.03.2026 -- Day 53
 
+ - Database CRUD Application Using Spring MVC and Servlets
+ - Implemented Login , Register User, Forget Password in my application using MySql
 
+### 📅  17.03.2026 -- Day 54
+ -
+ -
+
+ ---
 
 
  
