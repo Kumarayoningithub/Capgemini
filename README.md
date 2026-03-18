@@ -423,7 +423,7 @@ This repository documents the **day-wise syllabus and activities** covered durin
 ---
 
 ### 📅  10.03.2026 -- Day 48
-- Power Skills
+- English & Soft Skills
 - Email writing
 
 ---
@@ -487,15 +487,13 @@ This repository documents the **day-wise syllabus and activities** covered durin
 
  ---
 
- ### 📅  18.03.2026 -- Day 54
+ ### 📅  18.03.2026 -- Day 55
 
-  -
-  -
-  -
+  - English & Soft Skills
 
   ---
 
-  ### 📅  19.03.2026 -- Day 54
+  ### 📅  19.03.2026 -- Day 56
 
 
  
