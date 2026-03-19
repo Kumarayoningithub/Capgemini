@@ -494,6 +494,17 @@ This repository documents the **day-wise syllabus and activities** covered durin
   ---
 
   ### 📅  19.03.2026 -- Day 56
+  
+   - Implement REST API
+   - Perform GET, POST, DELETE, PUT
+   - Use POSTMAN
+   - Project name -> "UEMSpringbootMVC"
+   - Completed this Project
+
+  ---
+
+  ### 📅  21.03.2026 -- Day 57
+  
 
 
  
