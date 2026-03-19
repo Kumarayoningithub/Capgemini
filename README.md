@@ -22,6 +22,7 @@ Capgemini
     ├── sql
     ├── git-github
     ├── DevOps
+    ├── Servlet
     ├── Spring
     └── SpringBoot
 
@@ -34,6 +35,7 @@ Capgemini
 Personal practice exercises.
 
 ### Weekly_Assessment_2026-03-07
+### Weekly_Assessment_2026-03-14
 
 Weekly assessment submissions.
 
@@ -421,7 +423,7 @@ This repository documents the **day-wise syllabus and activities** covered durin
 ---
 
 ### 📅  10.03.2026 -- Day 48
-- Power Skills
+- English & Soft Skills
 - Email writing
 
 ---
@@ -455,20 +457,54 @@ This repository documents the **day-wise syllabus and activities** covered durin
  - Servlet Project Configuration
  - Spring Boot Project Configuration
  - Login page using Servlet
+ - Project name -> "UEMSpringbootMVC"
 
 ---
 
  ### 📅  14.03.2026 -- Day 52
- - M1 Re-Assessment
- - Revisit Spring Framework Architecture
+ - HackerRank M1 Re-Test
+ - Revisited Spring Framework architecture concepts
  - Weekly Assessment
- - Spring MVC Project(Path redirection)
+ - Worked on Spring MVC project (path redirection)
+ - Project name -> "UEMSpringbootMVC" Initial setup and planning of this project
 
 ---
 
-### 📅  15.03.2026 -- Day 52
+### 📅  16.03.2026 -- Day 53
 
+ - Built CRUD application using Spring MVC and Servlets
+ - Implemented Login, Register, and Forgot Password features with MySQL
+ - Integrated backend with database for user management
+ - Project name -> "UEMSpringbootMVC"
 
+### 📅  17.03.2026 -- Day 54
+
+ - Created proper project structure using packages (Controller, Service, Repository)
+ - Implemented Employee modules: Add, View, Edit
+ - Fetched data from database and displayed on JSP pages
+ - Connected frontend forms with backend using Spring MVC
+ - Project name -> "UEMSpringbootMVC"
+
+ ---
+
+ ### 📅  18.03.2026 -- Day 55
+
+  - English & Soft Skills
+
+  ---
+
+  ### 📅  19.03.2026 -- Day 56
+  
+   - Implement REST API
+   - Perform GET, POST, DELETE, PUT
+   - Use POSTMAN
+   - Project name -> "UEMSpringbootMVC"
+   - Completed this Project
+
+  ---
+
+  ### 📅  21.03.2026 -- Day 57
+  
 
 
  
