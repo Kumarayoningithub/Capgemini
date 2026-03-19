@@ -1,2 +1,22 @@
+# IntelliJ / Eclipse
+.idea/
 *.iml
+.classpath
+.project
+.settings/
+
+# Maven
+target/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+
+# Temp
+*.tmp
+
+# Build
+*.class*.iml
 out/
