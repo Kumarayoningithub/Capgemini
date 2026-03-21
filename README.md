@@ -23,7 +23,7 @@ Capgemini
     ├── git-github
     ├── DevOps
     ├── Servlet
-    ├── Spring
+    ├── SpringFramework
     └── SpringBoot
 
 ```
@@ -51,6 +51,9 @@ Training projects organized by topic:
 * SQL
 * Git & GitHub
 * DevOps
+* Servlet
+* Spring Framework
+* SpringBoot
 
 ---
 
