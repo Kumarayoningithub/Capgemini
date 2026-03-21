@@ -36,6 +36,7 @@ Personal practice exercises.
 
 ### Weekly_Assessment_2026-03-07
 ### Weekly_Assessment_2026-03-14
+### Weekly_Assessment_2026-03-21
 
 Weekly assessment submissions.
 
@@ -507,6 +508,19 @@ This repository documents the **day-wise syllabus and activities** covered durin
   ---
 
   ### 📅  21.03.2026 -- Day 57
+
+   - Complete J2Career Project (Weekly assessment)
+   - A full-stack Job Portal built using Spring Boot, JSP, and MySQL
+   - Supports Employer and Job Seeker roles with job posting, search, and application features
+   - Implements One-to-Many and Many-to-Many relationships using JPA/Hibernate.
+   - Includes secure login, CRUD operations, and real-time application tracking
+
+   ---
+
+  ### 📅  23.03.2026 -- Day 58
+
+
+  
   
 
 
