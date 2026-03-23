@@ -11,6 +11,7 @@ Capgemini
 │
 ├── Weekly_Assessment_2026-03-07
 ├── Weekly_Assessment_2026-03-14
+├── Weekly_Assessment_2026-03-21
 │
 └── src
     ├── Basic_java
@@ -518,6 +519,22 @@ This repository documents the **day-wise syllabus and activities** covered durin
    ---
 
   ### 📅  23.03.2026 -- Day 58
+
+   - Group Division for Sprint implementation
+   - Project Assign for sprint
+   - Provide Database schema
+   - Setup Database for other group members can access it.
+
+  ---
+  
+  ### 📅  24.03.2026 -- Day 59
+
+   ---
+
+  ### 📅  25.03.2026 -- Day 60
+
+   ---
+  
 
 
   
