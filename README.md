@@ -533,9 +533,19 @@ This repository documents the **day-wise syllabus and activities** covered durin
   
   ### 📅  24.03.2026 -- Day 59
 
+   - Create Github Repository for project
+   - Add all team member in the private repo
+   - Create 5 branches for 5 people
+   - Divide our work based on module
+   - Start designing our project
+
    ---
 
   ### 📅  25.03.2026 -- Day 60
+
+   ---
+
+  ### 📅  26.03.2026 -- Day 61
 
    ---
   
